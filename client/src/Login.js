@@ -1,7 +1,8 @@
 import React from "react";
 import { client_id, client_secret } from "./.Key";
 
-const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=";
+const AUTH_URL = "https://accounts.spotify.com/authorize?response_type=code" +
+"&client_id=" + client_id;
 
 export default function Login() {
   console.log("client_id " + client_id);
