@@ -1,8 +1,9 @@
 import React from "react";
 import { client_id, client_secret } from "./.Key";
+import{ Container } from 'react-bootstrap';
 
 let redirect_uri = "http://localhost3000";
-let scopes = "user-read-private user-read-email";
+let scopes = "streaming%20user-read-private%20user-read-email%20user-library-read";
 
 const AUTH_URL = "https://accounts.spotify.com/authorize" + 
 "?response_type=code" +

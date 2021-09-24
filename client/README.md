@@ -1,3 +1,6 @@
+- cd into /client, npm install react react-bootstrap
+- create client/src/.Key.js file, put client_id and client_secret from Spotify there (already in .gitignore)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
