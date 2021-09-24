@@ -1,6 +1,9 @@
 import React from "react";
 import { client_id, client_secret } from "./.Key";
 
+let redirect_url = "http://localhost3000";
+let scopes = "user-read-private user-read-email";
+
 const AUTH_URL = "https://accounts.spotify.com/authorize?response_type=code" +
 "&client_id=" + client_id;
 
