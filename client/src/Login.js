@@ -2,8 +2,8 @@ import React from "react";
 import { client_id, client_secret } from "./.Key";
 import{ Container } from 'react-bootstrap';
 
-let redirect_uri = "http://localhost3000";
-let scopes = "streaming%20user-read-private%20user-read-email%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state";
+let redirect_uri = "http://localhost:3000";
+let scopes = "user-read-private user-read-email";
 
 const AUTH_URL = "https://accounts.spotify.com/authorize" + 
 "?response_type=code" +
@@ -18,6 +18,9 @@ export default function Login() {
   return (
     <div>
       <p>Login component</p>
+      <Container>
+        <a className="btn btn-success" href={AUTH_URL}></a>
+      </Container>
     </div>
   )
 }
